@@ -25,8 +25,8 @@ const ChangePasswordModal: React.FC<ChangePasswordModalProps> = ({ onClose }) =>
       return;
     }
 
-    if (newPassword.length < 6) {
-      setError('Password baru harus minimal 6 karakter');
+    if (newPassword.length < 3) {
+      setError('Password baru harus minimal 3 karakter');
       return;
     }
 
